@@ -16,8 +16,38 @@ header{
     width: 100%;
     text-align: center;
 }
+header > img{
+    height: 100%;
+    margin-top: 50px;
+}
 main{
     padding-top: 100px;
+}
+main div.input-container {
+    width: 400px;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main div.input-container input{
+    line-height: 30px;
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 5px 10px;
+}
+
+main div.input-container button {
+    line-height: 30px;
+    padding: 5px 10px;
+    margin-left: 15px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+main div.input-container button:hover{
+    background-color: #b3b3b3;
 }
 
 
@@ -27,6 +57,7 @@ main div.container-task{
     background-color: teal;
     border-radius: 10px;
     padding: 10px;
+    font-size: 20px;
 }
 
 main ul {

@@ -11,8 +11,15 @@
 <body>
 
     <div id="app">
-        
+        <header>
+            <img src="img/logo.svg" alt="">
+        </header>
         <main>
+            <div class="input-container">
+                <input type="text" placeholder="Aggiungi task..." v-model="newTask.text">
+                <button @click="addNewTask">inserisci</button>
+            </div>
+
             <div class="container-task">
                 <ul>
                     <li v-for="(task, index) in myTasks">
@@ -24,10 +31,9 @@
                 </ul>
             </div>
         </main>
-
-    </div>
+    </div>        
    
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
-    <script src="carousel.js"></script>
+    <script src="todo.js"></script>
 </body>
 </html>
