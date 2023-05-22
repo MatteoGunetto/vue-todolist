@@ -3,3 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+.done{
+    text-decoration: line-through;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+main{
+    padding-top: 100px;
+}
+
+
+main div.container-task{
+    width: 600px;
+    margin: 0 auto;
+    background-color: teal;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+main ul {
+    margin-left: 30px;
+}
+
+main ul li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(0, 254, 199, 0.745);
+    padding: 5px 20px 5px 0;
+}

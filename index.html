@@ -11,6 +11,19 @@
 <body>
 
     <div id="app">
+        
+        <main>
+            <div class="container-task">
+                <ul>
+                    <li v-for="(task, index) in myTasks">
+                        <span :class="(task.done == true) ? 'done' : ''">
+                            {{ task.text }}
+                        </span>
+                        <i class="fa-regular fa-circle-xmark" @click="removeMyTask(index)"></i>
+                </li>
+                </ul>
+            </div>
+        </main>
 
     </div>
    
